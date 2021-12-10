@@ -1,0 +1,21 @@
+<div class="row justify-content-center mt-4">
+    <h2>UKM Seni</h2>
+</div>
+<hr>
+<div class="row justify-content-center mt-4">
+    <% data.forEach(ukm => { %>
+        <div class="col-5 mb-4">
+            <a href="/ukm_detail/<%= ukm.nama %>">
+                <div class="card" style="width: 25rem;">
+                    <img src="<%= ukm.ukmImg %>" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= ukm.nama %></h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <!-- <a href="#" class="btn btn-primary">Lihat</a> -->
+                    </div>
+                </div>
+            </a>
+        </div>
+    <% }) %>
+</div>
+<br><br>

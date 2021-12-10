@@ -1,0 +1,14 @@
+https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2021/07/14132151/Inilah-Hal-Menarik-Seputar-Anjing-German-Shepherd_halodoc.jpg.webp
+
+Pertanyaan:
+1. Register Admin bagaimana? Admin kampus yang tentukan
+2. Satu mahasiswa boleh gabung lebih dari satu UKM? Pengurus only
+3. Tombol di laporan admin mengarah kemana? HAPUS
+4. Tambah Data pendaftar di slide 12? HAPUS
+5. Sidebar Data pendaftar di slide 13? HAPUS
+6. Balasan dari admin ke user cek di sebelah mana? Kirim via email, terus tampilkan di table balasan
+7. Tombol anggota di slide 7, mengarah kemana? (mo bekng rupa halaman jadwal) HAPUS
+8. Email universitas Della Sale? info@unikadelasalle.ac.id
+9. Di admin dia mo bekng CRUD ato? Ada
+10. Pengunjung disini itu spa? user yang login ato orang siapa yang kunjungi website? User yang login
+11. Minta Logo kampus, nanti

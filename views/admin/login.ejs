@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+            <div class="col-6 mt-5">
+                <h1>Admin Login</h1>
+                <form method="POST" action="/admin/login">
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <div class="row">
+                          <input type="text" class="form-control col" placeholder="email" id="email" name="email" aria-describedby="emailHelp">
+                          <input class="form-control col-4" type="text" placeholder="@unikadelasalle.ac.id" aria-label="Disabled input example" disabled>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <div class="row">
+                          <input type="password" class="form-control" placeholder="min 8 characters" id="password" name="password">
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">Login</button>
+
+                    <p>Not admin? <a href="/login">Click here!</a></p>
+
+                  </form>
+            </div>
+    </div>
+</div>
+<br><br><br><br><br><br><br>

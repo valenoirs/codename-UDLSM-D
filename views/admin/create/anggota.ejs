@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+          <div class="col-6 mt-5">
+              <h1>Tambah Anggota</h1>
+              <form method="POST" action="/anggota/add">
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <div class="row">
+                        <input type="text" class="form-control col" placeholder="nama" id="nama" name="nama" aria-describedby="emailHelp" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="usia" class="form-label">Usia</label>
+                    <div class="row">
+                        <input type="number" class="form-control" placeholder="usia" id="usia" name="usia" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="fakultas" class="form-label">Fakultas</label>
+                    <div class="row">
+                        <input type="text" class="form-control" placeholder="fakultas" id="fakultas" name="fakultas" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="ukm" class="form-label">UKM</label>
+                    <div class="row">
+                      <select class="form-select" id="ukm" name="ukm" size="3" multiple aria-label="multiple select example">
+                        <% data.forEach(ukm => { %>
+                          <option value="<%= ukm.nama %>"><%= ukm.nama %></option>
+                        <% }) %>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                  <button type="submit" class="btn btn-primary mb-3">Tambah</button>
+                </form>
+          </div>
+  </div>
+</div>

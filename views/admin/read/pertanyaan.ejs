@@ -1,0 +1,51 @@
+<div class="row justify-content-center mt-4">
+    <h2>Data Pertanyaan</h2>
+</div>
+<hr>
+<div class="row justify-content-center mt-4">
+    <div class="col">
+    </div>
+    <div class="col">
+      <div class="col">
+        <input class="form-control me-2" id="myInput" type="search" onkeyup="myFunction()" placeholder="Search" aria-label="Search">
+      </div>
+    </div>
+</div>
+<div class="row justify-content-center mt-4">
+  <table class="table table-striped table-hover" id="myTable">
+    <thead class="table-success">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nama</th>
+            <th scope="col">Pertanyaan</th>
+            <th scope="col">Balasan</th>
+            <th scope="col">More</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% dataPertanyaan.forEach((pertanyaan, i) => { %>
+            <tr>
+              <th scope="row"><%= i + 1 %> </th>
+              <td><%= pertanyaan.nama %> </td>
+              <td><%= pertanyaan.text %> </td>
+              <% if (pertanyaan.balasan === "") { %>
+                <td>
+                  <a href="/admin/balasan/<%= pertanyaan.email %>" class="btn btn-primary">Balas</a>
+                  <!-- <form method="GET" action="/admin/balasan/">
+                    <button type="submit" class="btn btn-primary">Balas</button>
+                  </form> -->
+                </td>
+              <% } else { %>
+                <td><%= pertanyaan.balasan %></td>
+              <% } %>
+              <td>
+                <form method="POST" action="/pertanyaan/delete?_method=DELETE">
+                  <input type="hidden" id="pertanyaanId" name="pertanyaanId" value="<%= pertanyaan.pertanyaanId %>">
+                  <button type="submit" class="btn btn-danger" onclick="return confirm('Are You Sure?')"><i class="bi bi-info-circle"></i> Hapus</button>
+                </form>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+</div>

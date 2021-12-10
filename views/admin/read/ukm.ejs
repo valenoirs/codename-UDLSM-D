@@ -1,0 +1,47 @@
+<div class="row justify-content-center mt-4">
+    <h2>Data UKM</h2>
+</div>
+<hr>
+<div class="row justify-content-center mt-4">
+    <div class="col">
+      <a href="/admin/ukm/add" class="btn btn-primary">Tambah UKM</a>
+    </div>
+    <div class="col">
+      <div class="col">
+        <input class="form-control me-2" id="myInput" type="search" onkeyup="myFunction()" placeholder="Search" aria-label="Search">
+      </div>
+    </div>
+</div>
+<div class="row justify-content-center mt-4">
+  <table class="table table-striped table-hover" id="myTable">
+    <thead class="table-success">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">UKM</th>
+            <th scope="col">Koordinator</th>
+            <th scope="col">Anggota</th>
+            <!-- <th scope="col">Penjadwalan</th> -->
+            <th scope="col">More</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% dataUKM.forEach((ukm, i) => { %>
+            <tr>
+              <th scope="row"><%= i + 1 %> </th>
+              <td><%= ukm.nama %> </td>
+              <td><%= ukm.koordinator %> </td>
+              <td>
+                <a href="/admin/ukm/anggota/<%= ukm.nama %>" class="btn btn-success"><i class="bi bi-info-circle"></i> Anggota</a>
+              </td>
+              <!-- <td>Belum Jadwal</td> -->
+              <td>
+                <form method="POST" action="/ukm/delete?_method=DELETE">
+                  <input type="hidden" id="ukmId" name="ukmId" value="<%= ukm.ukmId %>">
+                  <button type="submit" class="btn btn-danger" onclick="return confirm('Are You Sure?')"><i class="bi bi-info-circle"></i> Hapus</button>
+                </form>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+      </table>
+</div>

@@ -1,0 +1,99 @@
+<div class="row justify-content-center mt-4">
+    <h2>UKM <%= dataUKM.nama %></h2>
+</div>
+<hr>
+<div class="row mt-4 mb-5">
+    <div class="col-3 justify-content-center">
+        <div class="card" style="width: 15rem;">
+            <img src="<%= dataUKM.koordinatorImg %>" class="card-img-top rounded-circle" alt="koordinator.img" height="237px">
+            <div class="card-body">
+              <h5 class="card-title"><%= dataUKM.koordinator %></h5>
+              <h6 class="card-subtitle mb-2 text-muted">Koordinator</h6>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Fakultas : <%= dataUKM.fakultas %></li>
+              <li class="list-group-item">Prodi : <%= dataUKM.program_studi %></li>
+              <li class="list-group-item">Semester : <%= dataUKM.semester %></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col justify-content-center">
+        <div class="row">
+            <h4>Pengumuman :</h4>
+        </div>
+        <br>
+        <div class="row" style="overflow: auto;height: 300px;">
+            <table class="table table-striped table-hover">
+                <thead class="table-success">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Waktu</th>
+                    <th scope="col">Pengumuman</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% dataInformasi.forEach((informasi,i) => { %>
+                    <tr>
+                      <th scope="row"><%= i + 1 %> </th>
+                      <td><%= new Date(informasi.updatedAt).toLocaleDateString('en-gb', { year: 'numeric', month: 'long', day: 'numeric'}) %></td>
+                      <td><%= informasi.pengumuman %></td>
+                    </tr>
+                  <% }) %>
+                </tbody>
+              </table>
+        </div>
+        <br>
+        <!-- <div class="row">
+            <h4>Jadwal :</h4>
+        </div>
+        <br>
+        <div class="row" style="overflow: auto;height: 300px;">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Waktu</th>
+                    <th scope="col">Kegiatan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div> -->
+    </div>
+</div>

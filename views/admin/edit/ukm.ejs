@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+          <div class="col-6 mt-5">
+              <h1>Tambah UKM</h1>
+              <form method="POST" action="">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <div class="row">
+                        <input type="text" class="form-control col" placeholder="email" id="email" name="email" aria-describedby="emailHelp" required>
+                        <input class="form-control col-4" type="text" placeholder="@unikadelasalle.ac.id" aria-label="Disabled input example" disabled>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Full Name</label>
+                    <div class="row">
+                        <input type="text" class="form-control" placeholder="full name" id="nama_user" name="nama_user" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="passowrd" class="form-label">Password</label>
+                    <div class="row">
+                        <input type="password" class="form-control" placeholder="min 8 characters" id="password" name="password" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <div class="row">
+                        <input type="password" class="form-control" placeholder="same with above" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary mb-3">Register</button>
+
+                  <p class="mb-5">Already have an account? <a href="/login">Log in!</a></p>
+                  <input type="hidden" id="admin" name="admin" value="false">
+                </form>
+          </div>
+  </div>
+</div>

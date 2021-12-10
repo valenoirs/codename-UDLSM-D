@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+          <div class="col-6 mt-5">
+              <h1>Tambah UKM</h1>
+              <form method="POST" action="/ukm/add" enctype="multipart/form-data">
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Nama UKM</label>
+                    <div class="row">
+                        <input type="text" class="form-control col" placeholder="nama" id="nama" name="nama" aria-describedby="emailHelp" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="jenis" class="form-label">Jenis UKM</label><br>
+                      <input type="radio" id="seni" name="jenis" value="Seni" checked>
+                      <label for="seni">Seni</label><br>
+                      <input type="radio" id="non-seni" name="jenis" value="Non-Seni">
+                      <label for="non-seni">Non-Seni</label><br>
+                  </div>
+                  <div class="mb-3">
+                    <label for="ukmImg" class="form-label">Upload Thumbnail</label>
+                    <div class="row">
+                      <input class="form-control" type="file" id="ukmImg" name="ukmImg">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="koordinator" class="form-label">Koordinator</label>
+                    <div class="row">
+                        <input type="text" class="form-control" placeholder="full name" id="koordinator" name="koordinator" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="fakultas" class="form-label">Fakultas Koordinator</label>
+                    <div class="row">
+                        <input type="text" class="form-control" placeholder="fakultas" id="fakultas" name="fakultas" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="program_studi" class="form-label">Program Studi Koordinator</label>
+                    <div class="row">
+                        <input type="text" class="form-control" placeholder="program studi" id="program_studi" name="program_studi" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="semester" class="form-label">Semester Koordinator</label>
+                    <div class="row">
+                        <input type="number" class="form-control" placeholder="semester" id="semester" name="semester" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="koordinatorImg" class="form-label">Upload Thumbnail</label>
+                    <div class="row">
+                      <input class="form-control" type="file" id="koordinatorImg" name="koordinatorImg">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                  <button type="submit" class="btn btn-primary mb-3">Tambah</button>
+                </form>
+          </div>
+  </div>
+</div>

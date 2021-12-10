@@ -1,0 +1,36 @@
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="https://unikadelasalle.ac.id/wp-content/uploads/2018/06/UKDLSM_272-x90.png" alt="" height="34x">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/pengunjung">Pengunjung</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/ukm">UKM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/anggota">Anggota</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/pertanyaan">Pertanyaan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/informasi">Informasi</a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex" method="GET" action="/admin/logout">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <button type="submit" class="btn btn-danger" onclick="return confirm('Are You Sure?')">Logout</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </nav>

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+          <div class="col-6 mt-5">
+              <h1>Tambah Informasi</h1>
+              <form method="POST" action="/informasi/add">
+                  <div class="mb-3">
+                    <label for="nama_ukm" class="form-label">UKM</label>
+                    <div class="row">
+                      <select class="form-select" size="3" id="nama_ukm" name="nama_ukm" multiple aria-label="multiple select example">
+                        <% data.forEach(ukm => { %>
+                          <option value="<%= ukm.nama %>"><%= ukm.nama %></option>
+                        <% }) %>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="pengumuman" class="form-label">Pengumuman</label>
+                    <div class="row">
+                      <textarea class="form-control" style="width: 35rem;" placeholder="pengumuman" id="pengumuman" name="pengumuman" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                  <button type="submit" class="btn btn-primary mb-3">Tambah</button>
+                </form>
+          </div>
+  </div>
+</div>

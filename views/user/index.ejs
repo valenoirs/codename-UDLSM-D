@@ -1,0 +1,39 @@
+<div class="row justify-content-center mt-5">
+  <div class="col-5">
+    <a href="/ukm_seni">
+      <div class="card" style="width: 25rem;">
+        <img src="https://failfaire.org/wp-content/uploads/2020/09/Pengertian-Seni.jpg" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">UKM Seni</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <!-- <a href="#" class="btn btn-primary">Lihat</a> -->
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-5 mb-5">
+    <a href="/ukm_non_seni">
+    <div class="card" style="width: 25rem;">
+      <img src="https://i2.wp.com/www.nesabamedia.com/wp-content/uploads/2019/05/abstract-6.jpg?resize=680%2C350&ssl=1" height="200px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">UKM Non-Seni</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <!-- <a href="#" class="btn btn-primary">Lihat</a> -->
+      </div>
+    </div>
+  </a>
+  </div>
+</div>
+<div class="row justify-content-center mt-5">
+  <h4>Any Question?</h4>
+</div>
+<div class="row justify-content-center mt-3">
+  <form method="POST" action="/pertanyaan/add/<%= userId %> ">
+    <div class="mb-3">
+      <textarea class="form-control" style="width: 35rem;" placeholder="Your question!" id="text" name="text" rows="3"></textarea>
+      <div class="row justify-content-center mt-1">
+        <button type="submit" class="btn btn-primary mb-5 mt-3">Submit</button>
+      </div>
+    </div>    
+  </form>
+</div>

@@ -1,0 +1,12 @@
+1. Logout [DONE]
+2. Email Balasan - Tunggu email dari client
+3. Login Session [DONE]
+4. Search [DONE]
+5. Front End Thumbnail [DONE]
+6. Design (Logo, Primary Color(Green), etc.) [DONE]
+
+Logo Univ nav
+https://unikadelasalle.ac.id/wp-content/uploads/2018/06/UKDLSM_272-x90.png
+
+email : 19012007@unikadelasalle.ac.id
+password : claudea12007

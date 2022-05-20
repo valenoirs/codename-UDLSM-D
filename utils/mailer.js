@@ -6,13 +6,13 @@ const sendEmail = async (email, balasan) => {
         let transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: '19012007@unikadelasalle.ac.id',
-                pass: 'claudea12007'
+                user: process.env.ADMIN_EMAIL,
+                pass: process.env.ADMIN_PASS
             }
         });
 
         let mailOption = {
-            from: '19012007@unikadelasalle.ac.id',
+            from: process.env.ADMIN_EMAIL,
             to: email,
             subject: 'Balasan Admin UKM',
             text: `${balasan}`
